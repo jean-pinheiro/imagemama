@@ -11,6 +11,7 @@ register_nav_menus( array('footer-menu' => __( 'Menu Rodapé' ) ) );
 function general_call(){
 	wp_enqueue_style( "reset", get_bloginfo('template_directory')."/css/reset.css", "", "1.0", "all" );
 	wp_enqueue_style( "general", get_bloginfo('template_directory')."/css/general.css", "", "1.0", "all" );
+	wp_enqueue_script( "Ajax", get_bloginfo('template_directory')."/js/ajax.js", array('jquery') );
 }
 /* Fim chamadas */
 
@@ -22,7 +23,7 @@ function home_call(){
 		?>
 		<script type="text/javascript">
 			jQuery(document).ready(function(){
-				jQuery('#col-1').cycle({ 
+				jQuery('#col-1 ul').cycle({ 
     				fx:    'fade', 
     				speed:  2000
     			});

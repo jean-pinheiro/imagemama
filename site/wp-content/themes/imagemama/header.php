@@ -15,59 +15,6 @@
 	<?php general_call(); ?>
 	<?php if(is_home()){home_call();} ?>
 	<?php wp_head(); ?>
-	
-	<!--script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script-->
-	
-	<!--script type="text/javascript">
-	
-		function feedback(linkback){
-				$("#body_content").text("Carregando...");
-				var link = $(linkback).attr("rel");
-				$("#body_content").load(link + " .ref", function() {
-					$("#body_content a").each(function(){
-					var url = $(this).attr("href");
-					$(this).attr("rel", url);
-					var urlString = url.toString();
-					var urlArray = urlString.split("/");
-					if (urlArray.pop()==""){
-						var campo = urlArray.length-1;
-						var urlFinish = urlArray[campo]}
-						else {
-							var urlFinish = urlArray.pop();
-					}
-					$(this).attr("href", "#"+urlFinish);
-					});
-				});
-		}
-	
-		/* Converte todos os links do menu */
-		$(document).ready(function(){
-			$("#menu a, #body_content a").each(function(){
-				var url = $(this).attr("href");
-				$(this).attr("rel", url);
-				var urlString = url.toString();
-				var urlArray = urlString.split("/");
-				if (urlArray.pop()==""){
-					var campo = urlArray.length-1;
-					var urlFinish = urlArray[campo]}
-					else {
-						var urlFinish = urlArray.pop();
-				}
-				$(this).attr("href", "#"+urlFinish);
-			});		
-		})
-		/* -------------------------------- */
-		
-		/* Faz o load e converte os links carregados */		
-		$(document).ready(function(){
-			$("#menu a, #body_content a").on("click", function(){
-				feedback(this);
-			});
-		});
-		
-		/* ---------------------------------------- */
-		
-	</script-->
 </head>
 
 <body>
@@ -89,7 +36,11 @@
 			<a href="<?php bloginfo('url'); ?>/contato" title="Contato">
 				<span id="mail"></span>
 			</a>
-			<span id="busca"></span>
+			<span id="busca">
+				<form name="form1" method="get" action="" role="search">
+                   <input type="text" name="s" id="s" value="Procurar" onfocus="if(this.value=='Procurar'){this.value=''};" onblur="if(this.value==''){this.value='Procurar'};" class="form" holder="O que Você procura?" />
+                </form>
+			</span>
 		</div>
 		
 		<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container' => 'div', 'container_id' => 'menu_top_int', 'menu_id' => 'menu' ) ); ?>
