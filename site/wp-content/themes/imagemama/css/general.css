@@ -1,0 +1,41 @@
+html {-webkit-font-smoothing: antialiased; font-family: arial;}
+.txtindent {font-size: 0px; display: block; overflow: hidden; text-indent: -9999px;}
+#body{width: 100%; height: 1159px; background: url('../images/body.png') top center no-repeat;}
+#top{width: 940px; height: 285px; margin: 0 auto; position: relative;}
+	#logo{width: 136px; height: 181px; background: url('../images/logo.png') no-repeat; position: absolute; top: 70px; left: 0px; display: block;}
+	#slogan{width: 425px; height: 140px; background: url('../images/slogan.png') no-repeat; position: absolute; top: 102px; left: 210px; display: block;}
+	#icon-tel{width: 34px; height: 35px; background: url('../images/icon-tel.png') no-repeat; position: absolute; top: 120px; right: 208px; display: block;}
+	#icon-mail{width: 34px; height: 35px; background: url('../images/icon-mail.png') no-repeat; position: absolute; top: 170px; right: 208px; display: block;}
+	#icon-busca{width: 34px; height: 35px; background: url('../images/icon-busca.png') no-repeat; position: absolute; top: 225px; right: 208px; display: block;}
+	#tel{width: 198px; height: 36px; background: url('../images/tel.png') no-repeat; position: absolute; top: 120px; right: 0; display: block;}
+	#mail{width: 198px; height: 36px; background: url('../images/mail.png') no-repeat; position: absolute; top: 170px; right: 0; display: block;}
+	#busca{width: 198px; height: 36px; background: url('../images/busca.png') no-repeat; position: absolute; top: 225px; right: 0; display: block;}
+	#menu{width: 940px; height: 45px; margin: 0 auto; position: relative; background: #fff; border-bottom: 1px #F8A984 solid;}
+		#menu li{float: left;}
+		#menu a{line-height: 45px; color: #636363; display: block; height: 45px; font-size: 14px; padding: 0 17px;}
+		#menu a:hover{background: #f8a984; color: #fff;}
+	#content{width: 940px; margin: 0 auto; position: relative; padding-top: 40px;}
+		#col-1{float: left; width: 618px; height: 255px; border-right: 1px #e2e2e2 solid; border-bottom: 1px #e2e2e2 solid; margin-right: 20px; position: relative;}
+		#col-1 img{width: 617px; height: 255px; border-right: 1px #a9a9a9 solid; border-bottom: 1px #a9a9a9 solid;}
+		#col-2{width: 280px; height: 255px; float:right; position: relative;}
+	#listpages{width: 940px; position: relative; clear: both; padding-top: 40px;}
+		#listpages li{float: left; margin: 0 10px;}
+		#listpages li:first-child{margin-left: 0;}
+		#listpages li:last-child{margin-right: 0;}
+		#listpages p.title{color: #636363; font-size: 17px; border-bottom: 1px #f8ae8b solid; margin-bottom: 10px;}
+		#listpages .listint{position: absolute; width: 220px; height: 55px; text-align: center; background: url('../images/tarja-serviços.png') transparent repeat; top:190px; z-index: 999;}
+		#listpages .title_category{color: #939393;}
+		#listpages a{line-height: 55px; color: #fff; font-size: 17px; display: block; width: 220px; height: 55px;}
+	#categories{width: 940px; position: relative; clear: both; padding-top: 30px;}
+		.cat-int{width: 460px; height: 180px; float: left;}
+		.title_category{width: 100%; height: 30px; border-bottom: 1px solid #fd8248; text-align: left;}
+			.title_category a{background: none repeat scroll 0 0 #FD8248; color: #FFFFFF; display: block; font-size: 15px; height: 30px; padding: 0 20px; text-align: center; width: 135px; line-height: 30px;}
+#rodape-menu-bottom{width: 100%; height: 217px; background: url('../images/rodape-menu-bottom.png') #fde4d9 center no-repeat;}
+	#menu-rodape{width: 940px; position: relative; margin: 0 auto; padding-top: 25px;}
+	#menu-rodape li{float: left; width: 155px; margin-right: 41px;}
+	#menu-rodape li:last-child{margin: 0px;}
+	#menu-rodape a{color: #9c512e; font-weight: bold; text-transform: uppercase; font-size: 14px;}
+		#menu-rodape .sub-menu{margin-top: 20px;}
+		#menu-rodape .sub-menu li{float: none;}
+		#menu-rodape .sub-menu a{color: #aa694c; font-weight: normal; text-transform: none; font-size: 13px;}
+#rodape-endereco{width: 100%; height: 137px; background: url('../images/rodape-endereco.png') #f8a984 center no-repeat;}
