@@ -12,9 +12,9 @@
    	                    		<?php the_post_thumbnail( 'banner', array('class' => 'mini')); ?>
    	                    		<div class="tarja-transp"><?php the_title(); ?></div>
    	                    		<div class="social">
-   	                    			<span id="face-bottom"><?php echo do_shortcode( '[wpsr_facebook]' ) ?></span>
-   	                    			<span id="twitter-bottom"><?php echo do_shortcode( '[wpsr_retweet]' ) ?></span>
-   	                    			<span id="plus-bottom"><?php echo do_shortcode( '[wpsr_plusone]' ) ?></span>
+   	                    			<!--span id="face-bottom"><?php /* echo do_shortcode( '[wpsr_facebook]' ) */ ?></span>
+   	                    			<span id="twitter-bottom"><?php /* echo do_shortcode( '[wpsr_retweet]' ) */ ?></span>
+   	                    			<span id="plus-bottom"><?php /* echo do_shortcode( '[wpsr_plusone]' ) */ ?></span-->
    	                    		</div>
    	                    	</li>
 	                    <?php } ?>
@@ -60,7 +60,7 @@
                     <?php while ( have_posts() ) : the_post(); ?>
                     <div class="cat-int-1">
                     	<div class="title_category">
-                    		<a href="<?php bloginfo('url') ?>/espaco-do-paciente"><?php single_cat_title(); ?></a>
+                    		<a href="<?php bloginfo('url') ?>/?cat=<?php the_category_ID(); ?>"><?php single_cat_title(); ?></a>
                     	</div>
 						<p class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
 						<div class="listint">
@@ -76,7 +76,7 @@
                     <?php while ( have_posts() ) : the_post(); ?>
                     <div class="cat-int-2">
                     	<div class="title_category">
-                    		<a href="<?php bloginfo('url') ?>/espaco-do-paciente"><?php single_cat_title(); ?></a>
+                    		<a href="<?php bloginfo('url') ?>/?cat=<?php the_category_ID(); ?>"><?php single_cat_title(); ?></a>
                     	</div>
 						<p class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
 						<div class="listint">

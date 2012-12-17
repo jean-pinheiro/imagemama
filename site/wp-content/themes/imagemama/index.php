@@ -6,11 +6,16 @@
 
 				<div id="col-int">
 					<?php while ( have_posts() ) : the_post(); ?>
-						<p class="title"><?php the_title(); ?></p>
+						<p class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
 						<div class="listint">
 							<?php the_content(); ?>
 						</div>
                     <?php endwhile; ?>
+
+                    <?php if ( ! have_posts() ) : ?>
+						<p class="title">Nenhum post encontrado</p>
+					<?php endif; ?>
+
 				</div>
 
 				<div id="col-2">

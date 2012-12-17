@@ -13,7 +13,6 @@
 		?>
 	</title>
 	<?php general_call(); ?>
-	<?php if(is_home()){home_call();} ?>
 	<?php wp_head(); ?>
 </head>
 
@@ -37,8 +36,8 @@
 				<span id="mail"></span>
 			</a>
 			<span id="busca">
-				<form name="form1" method="get" action="" role="search">
-                   <input type="text" name="s" id="s" value="Procurar" onfocus="if(this.value=='Procurar'){this.value=''};" onblur="if(this.value==''){this.value='Procurar'};" class="form" holder="O que Você procura?" />
+				<form name="form1" method="get" action="<?php bloginfo('url') ?>" role="search">
+                   <input type="text" name="s" id="s" value="O que você procura?" onfocus="if(this.value=='O que você procura?'){this.value=''};" onblur="if(this.value==''){this.value='O que você procura?'};" class="form" holder="O que você procura?" />
                 </form>
 			</span>
 		</div>

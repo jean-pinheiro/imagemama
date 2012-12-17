@@ -1,7 +1,7 @@
-$(document).ready(function(){
-	$("#menu a, #menu-rodape a").each(function(){
-		var url = $(this).attr("href");
-		$(this).attr("rel", url);
+jQuery(document).ready(function(){
+	jQuery("#menu a, #menu-rodape a").each(function(){
+		var url = jQuery(this).attr("href");
+		jQuery(this).attr("rel", url);
 		var urlString = url.toString();
 		var urlArray = urlString.split("/");
 		if (urlArray.pop()==""){
@@ -10,17 +10,20 @@ $(document).ready(function(){
 			else {
 				var urlFinish = urlArray.pop();
 		}
-		$(this).attr("href", "#"+urlFinish);
+		jQuery(this).attr("href", "#"+urlFinish);
 	});
-	var urlf = $("#menu-item-82 a").attr("rel");
-	$("#menu-item-82 a").attr("href", urlf);
+
 })
-$(document).ready(function(){
-	$("#menu a, #menu-rodape a").on("click", function(){
-		$("#content").text("").addClass("load");
-		var link = $(this).attr("rel");
-		$("#content").load(link + " #refcontent", function(){
-			$("#content").removeClass("load");	
+jQuery(document).ready(function(){
+	jQuery("#menu a, #menu-rodape a").on("click", function(){
+		jQuery("#content").text("").addClass("load");
+		var link = jQuery(this).attr("rel");
+		jQuery("#content").load(link + " #refcontent", function(){
+			jQuery("#content").removeClass("load");
+			jQuery('#col-1 ul').cycle({ 
+				fx:    'fade', 
+				speed:  2000
+			});	
 		});
 	});
 });

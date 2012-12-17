@@ -11,14 +11,9 @@ register_nav_menus( array('footer-menu' => __( 'Menu Rodapé' ) ) );
 function general_call(){
 	wp_enqueue_style( "reset", get_bloginfo('template_directory')."/css/reset.css", "", "1.0", "all" );
 	wp_enqueue_style( "general", get_bloginfo('template_directory')."/css/general.css", "", "1.0", "all" );
-	wp_enqueue_script( "Ajax", get_bloginfo('template_directory')."/js/ajax.js", array('jquery') );
-}
-/* Fim chamadas */
-
-/* Chamadas para home */
-function home_call(){
 	wp_enqueue_script( "jCycle", get_bloginfo('template_directory')."/js/jquery.cycle.all.js", array('jquery') );
-	
+	wp_enqueue_script( "Ajax", get_bloginfo('template_directory')."/js/ajax.js", array('jquery') ) ;
+
 	function jcycle(){
 		?>
 		<script type="text/javascript">
@@ -32,7 +27,15 @@ function home_call(){
 		<?php
 	}
 	add_action('wp_head','jcycle');
+
 }
 /* Fim chamadas */
+
+
+function limit_posts_per_page() {
+	if ( is_category() || is_search() ){return 2;}
+}
+
+add_filter('pre_option_posts_per_page', 'limit_posts_per_page');
 
 ?>
