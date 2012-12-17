@@ -1,6 +1,7 @@
 html {-webkit-font-smoothing: antialiased; font-family: arial;}
 .txtindent {font-size: 0px; display: block; overflow: hidden; text-indent: -9999px;}
 #body{width: 100%; height: auto; background: url('../images/body.png') top center no-repeat;}
+#map{width: 293px; height: 165px;}
 #top{width: 940px; height: 285px; margin: 0 auto; position: relative;}
 	#logo{width: 136px; height: 181px; background: url('../images/logo.png') no-repeat; position: absolute; top: 70px; left: 0px; display: block;}
 	#slogan{width: 425px; height: 140px; background: url('../images/slogan.png') no-repeat; position: absolute; top: 106px; left: 208px; display: block;}
