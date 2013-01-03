@@ -12,9 +12,9 @@
    	                    		<?php the_post_thumbnail( 'banner', array('class' => 'mini')); ?>
    	                    		<div class="tarja-transp"><?php the_title(); ?></div>
    	                    		<div class="social">
-   	                    			<!--span id="face-bottom"><?php /* echo do_shortcode( '[wpsr_facebook]' ) */ ?></span>
-   	                    			<span id="twitter-bottom"><?php /* echo do_shortcode( '[wpsr_retweet]' ) */ ?></span>
-   	                    			<span id="plus-bottom"><?php /* echo do_shortcode( '[wpsr_plusone]' ) */ ?></span-->
+   	                    			<span class="facebottom"><?php echo do_shortcode( '[facebottom]' ); ?></span>
+   	                    			<span class="twitterbottom"><?php echo do_shortcode( '[twitterbottom]' ); ?></span>
+   	                    			<span class="plusbottom"><?php echo do_shortcode( '[plusbottom]' ); ?></span>
    	                    		</div>
    	                    	</li>
 	                    <?php } ?>

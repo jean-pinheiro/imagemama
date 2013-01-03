@@ -6,7 +6,8 @@
 
 				<div id="col-int">
 					<?php while ( have_posts() ) : the_post(); ?>
-						<?php if (is_category()){ ?> <a class="titlecat" href="<?php bloginfo('url') ?>/?cat=<?php the_category_ID(); ?>"><?php single_cat_title(); ?></a> <?php } ?>
+						<a class="titlecat" href="<?php bloginfo('url') ?>/?cat=<?php the_category_ID(); ?>"><?php single_cat_title(); ?></a>
+						<p class="title-post"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
 						<span class="facebottom-int"><?php echo do_shortcode( '[facebottom]' ); ?></span>
    	                    <span class="twitterbottom-int"><?php echo do_shortcode( '[twitterbottom]' ); ?></span>
    	                    <span class="plusbottom-int"><?php echo do_shortcode( '[plusbottom]' ); ?></span>

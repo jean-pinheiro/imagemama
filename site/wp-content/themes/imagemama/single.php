@@ -6,7 +6,13 @@
 
 				<div id="col-int">
 					<?php while ( have_posts() ) : the_post(); ?>
-						<?php if (is_category()){ ?> <a class="titlecat" href="<?php bloginfo('url') ?>/?cat=<?php the_category_ID(); ?>"><?php single_cat_title(); ?></a> <?php } ?>
+						<?php
+						$categoria = get_the_category();
+						$nomeCategoria = $categoria[0]->cat_name;
+						$linkCategoria = $categoria[0]->slug;
+						?>
+						<a class="titlecat" href="<?php bloginfo('url') ?>/<?php echo $linkCategoria; ?>"><?php echo $nomeCategoria; ?></a>
+						<p class="title-post"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
 						<span class="facebottom-int"><?php echo do_shortcode( '[facebottom]' ); ?></span>
    	                    <span class="twitterbottom-int"><?php echo do_shortcode( '[twitterbottom]' ); ?></span>
    	                    <span class="plusbottom-int"><?php echo do_shortcode( '[plusbottom]' ); ?></span>
@@ -18,12 +24,14 @@
    	                    		echo "<img src='".get_bloginfo('template_directory')."/images/destaque.jpg' class='img-destaque' />";
    	                    	}
    	                    	?>
-   	                    	<a href="<?php the_permalink(); ?>" class="more-int">LEIA MAIS</a>
    	                    </div>
 
 						<div class="listint">
-							<?php the_excerpt(); ?>
+							<?php the_content(); ?>
 						</div>
+
+						<?php previous_posts_link( __( 'anterior' ) ); ?>
+						<?php next_posts_link( __( 'próxima') ); ?>
 
                     <?php endwhile; ?>
 
