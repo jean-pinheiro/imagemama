@@ -5,9 +5,8 @@
 			<div id="main">
 
 				<div id="col-int">
-					<a class="titlecat" href="<?php bloginfo('url') ?>/?cat=<?php the_category_ID(); ?>"><?php single_cat_title(); ?></a>
 					<?php while ( have_posts() ) : the_post(); ?>
-						<p class="title-post"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+						<p class="title-post" style="margin-top: -10px;"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
 						<span class="facebottom-int"><?php echo do_shortcode( '[facebottom]' ); ?></span>
    	                    <span class="twitterbottom-int"><?php echo do_shortcode( '[twitterbottom]' ); ?></span>
    	                    <span class="plusbottom-int"><?php echo do_shortcode( '[plusbottom]' ); ?></span>
@@ -15,16 +14,16 @@
    	                    	<?php 
    	                    	if ( has_post_thumbnail() ) {
    	                    		the_post_thumbnail( 'destaque-interna', array('class' => 'img-destaque')); 
-   	                    	} else {
-   	                    		echo "<img src='".get_bloginfo('template_directory')."/images/destaque.jpg' class='img-destaque' />";
    	                    	}
    	                    	?>
-   	                    	<a href="<?php the_permalink(); ?>" class="more-int">LEIA MAIS</a>
    	                    </div>
 
 						<div class="listint">
-							<?php the_excerpt(); ?>
+							<?php the_content(); ?>
 						</div>
+
+						<?php previous_posts_link( __( 'anterior' ) ); ?>
+						<?php next_posts_link( __( 'próxima') ); ?>
 
                     <?php endwhile; ?>
 
