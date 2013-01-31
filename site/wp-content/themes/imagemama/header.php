@@ -2,7 +2,6 @@
 <html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width" />
 	<title>
 		<?php
 			wp_title( '|', true, 'right' );
