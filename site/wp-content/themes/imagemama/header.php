@@ -26,12 +26,12 @@
 			</a>
 			<span id="slogan"></span>
 			<span id="icon-tel"></span>
-			<a href="<?php bloginfo('url'); ?>/contato" title="Contato">
+			<a href="<?php bloginfo('url'); ?>/fale-conosco" title="Fale Conosco">
 				<h2 id="icon-mail" class="txtindent">Contato</h2>
 			</a>
 			<span id="icon-busca"></span>
 			<span id="tel"></span>
-			<a href="<?php bloginfo('url'); ?>/contato" title="Contato">
+			<a href="<?php bloginfo('url'); ?>/fale-conosco" title="Fale Conosco">
 				<span id="mail"></span>
 			</a>
 			<span id="busca">

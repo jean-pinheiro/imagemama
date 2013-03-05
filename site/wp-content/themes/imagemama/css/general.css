@@ -63,7 +63,7 @@ body{background: url('../images/body.png') top center no-repeat;}
 			#categories p.title{margin:15px 0 15px;}
 			p.title a{color: #636363; font-size: 21px;}
 			.listint a{color: #616161; font-size: 14px; font-weight: 100;}
-			.more{display: block; background: #f8a984; color: #fff; padding: 5px 0px; width: 85px; text-align: center; position: absolute; top: 215px; right: 0; font-size: 13px;font-weight: bold;}
+			.more{display: block; background: #f8a984; color: #fff; padding: 5px 0px; width: 85px; text-align: center; position: absolute; top: 180px; right: 0; font-size: 13px;font-weight: bold;}
 			.more-int{position: absolute; bottom: 4px; right: -2px; background: #fc8750; color: #fff; padding: 7px 20px;}
 	p.title-post{margin: 28px 0 20px;}
 	p.title-post a{color: #fc8750; font-size: 32px;}
@@ -79,10 +79,20 @@ body{background: url('../images/body.png') top center no-repeat;}
 		#menu-rodape .sub-menu li{float: none;}
 		#menu-rodape .sub-menu a{color: #aa694c; font-weight: normal; text-transform: none; font-size: 13px;}
 #rodape-endereco{width: 100%; height: 137px; background: url('../images/rodape-endereco.png') #f8a984 center no-repeat;}
-#address-2{margin: 0 auto; position: relative; width: 940px; font-size: 16px; font-weight: 100; color: #9c512e; line-height: 70px;}
-#sala-do-marketing{width: 45px; height: 42px; background: url('../images/icon-sala.png'); margin: 0 auto;}
-.wpcf7-form input{width: 300px; height: 30px;}
-.wpcf7-form input[type='submit']{width: 55px;}
-.wpcf7-form textarea{width: 300px; height: 250px; resize:none;}
+#address-2{margin: 0 auto; position: relative; width: 940px; font-size: 25px; font-weight: 100; color: #9c512e; line-height: 32px; text-align: center; padding-top: 25px;}
+#sala-do-marketing{width: 31px; height: 28px; background: url('../images/icon-sala.png'); margin-top: 40px; float: right;}
+.wpcf7-form input{width: 525px; height: 50px; border: 1px solid black; font-size: 15px; color: #353535; padding-left: 20px; margin-bottom: 20px;}
+.wpcf7-form input[name='telefone']{width: 200px;}
+.wpcf7-form input[name='local']{width: 280px; margin-left: 18px;}
+.wpcf7-form input[type='submit']{width: 220px; height: 45px; float: right; border: none; color: white; background: #fc854d; margin: 20px 68px 0 0; text-transform: uppercase; padding: 0px;}
+.wpcf7-form textarea{width: 506px; height: 280px; border: 1px solid black; resize:none; padding: 20px}
+.titlehora{text-transform: uppercase; font-size: 16px; padding-top: 10px;}
+.semanahora{font-weight: bold; font-size: 14px; margin-top: 12px;}
+.agendamento-text{text-align: center; font-size: 32px; line-height: 40px}
+.agenda-exame{background: url('../images/fundo-agenda.png') transparent; width: 620px; height: 125px; margin-top: 10px;}
+.agenda-exame-int{width: 46%; height: 100%; float: left; padding: 2%;}
+.title-exame-int{font-size: 16px; color: #f7a982;}
+.txt-exame-int{font-size: 15px; color: black; line-height: 18px; padding-top: 15px;}
 .refcontent{padding-bottom: 50px;}
-.load{background: url('../images/ajax-loader.gif') center no-repeat;}
+#col-int ul{list-style: disc; margin-left: 20px;}
+.load{background: url('../images/ajaxloader.gif') center no-repeat;}

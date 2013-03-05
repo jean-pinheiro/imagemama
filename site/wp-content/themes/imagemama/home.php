@@ -4,7 +4,7 @@
 		<div id="refcontent">
 			<div id="main">
 				<div id="col-1">
-					<ul>
+					<ul class="refbanner">
 					<?php query_posts( array ( 'cat' => '1', 'showposts' => 2 ) ); ?>
                     <?php while ( have_posts() ) : the_post(); ?>
 						<?php if ( has_post_thumbnail() ) { ?>
@@ -29,7 +29,7 @@
 					<div id="map">
 					</div>
 					<div id="address-1">
-						<p class="first">Medical Ceniter</p>
+						<p class="first">Medical Center</p>
 						<p class="second">
 							Rua Coronel Linhares, 950 Andar - L-2 - Sala 07 <br />
 							Aldeota - Fortaleza-Ce - Fone/Fax: 85 3261.7172 - 3261.8902
